@@ -1,0 +1,73 @@
+.calculator {
+  width: 400px;
+  background-color: #123;
+  color: #fff;
+  display: grid;
+  grid-template-areas:
+    "scr scr scr "
+    "first first first"
+    "second second second"
+    "third third third"
+    "fourth fourth fourth"
+    "fifth fifth fifth";
+    font-family: "Courier New", Courier, monospace;
+}
+.calc-buttons{
+    width: 400px;
+}
+.screen {
+  background-color: black;
+  grid-area: scr;
+  font-size: 40px;
+  text-align: right;
+  padding: 10px 20px;
+}
+.btn {
+  background-color: #d8d9db;
+  color: #123;
+  font-size: 40px;
+}
+
+.btn:hover {
+  background-color: #ebebeb;
+}
+.btn:active {
+  background-color: #bbbcbe;
+}
+
+.btn:last-child {
+  background-color: #df974c;
+  color: #d8d9db;
+}
+.btn:last-child:hover {
+  background-color: #dfb07e;
+}
+.btn:last-child:active {
+  background-color: #dd8d37;
+}
+
+.first-row {
+  grid-area: first;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.second-row {
+  grid-area: second;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.third-row {
+  grid-area: third;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.fourth-row {
+  grid-area: fourth;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.fifth-row {
+  grid-area: fifth;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
